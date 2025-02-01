@@ -1,5 +1,5 @@
-deepface=0.0.93
-tensorflow=2.18.0
+deepface==0.0.93
+tensorflow==2.18.0
 opencv-python>=4.5
 pillow>=8.0.0
 numpy>=1.18.0
