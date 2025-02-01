@@ -1,6 +1,6 @@
 deepface==0.0.93
-tensorflow>=2.16.0
-opencv-contrib-python>=4.11
+tensorflow
+opencv-contrib-python
 pillow==8.4.0
-numpy==1.19.5
+numpy
 flask==2.0.1
