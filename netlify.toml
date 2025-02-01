@@ -5,15 +5,14 @@
 [build.environment]
     PYTHON_VERSION = "3.11"
 
-
 [[redirects]]
   from = "/capture_face"
-  to = "netlify/functions"
+  to = "/.netlify/functions/capture_face"
   status = 200
   force = true
 
 [[redirects]]
   from = "/recognize_face"
-  to = "netlify/functions"
+  to = "/.netlify/functions/recognize_face"
   status = 200
   force = true
