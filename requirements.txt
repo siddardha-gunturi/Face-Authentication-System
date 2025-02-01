@@ -1,5 +1,6 @@
-deepface
-opencv-python
-pillow
-numpy
-flask
+deepface>=0.0.1
+tensorflow>=2.0.0,<3.0.0
+opencv-python>=4.5,<5.0
+pillow>=8.0.0
+numpy>=1.18.0
+flask>=2.0.0
