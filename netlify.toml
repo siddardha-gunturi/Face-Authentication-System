@@ -2,6 +2,9 @@
   publish = "."
   functions = "netlify/functions"
 
+[[plugins]]
+package = "@netlify/plugin-python-functions"
+
 [build.environment]
     PYTHON_VERSION = "3.11"
 
