@@ -70,7 +70,7 @@ def recognize_face():
     frame = open_cv_image[:, :, ::-1].copy()
 
     try:
-        result = DeepFace.find(frame, db_path=authorised_faces, model_name="ArcFace")
+        result = DeepFace.find(frame, db_path=authorised_faces, model_name="VGG-Face")
 
         if len(result) > 0:
             name = result[0]["identity"][0].split("\\")[-1].split(".")[0]
