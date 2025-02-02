@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Authentication</title>
+    <style>
+      #webcam {
+        border: 1px solid black;
+      }
+      .container {
+        text-align: center;
+      }
+      .result {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Face Authentication System</h1>
+
+      <div>
+        <video id="webcam" width="640" height="480" autoplay></video>
+      </div>
+
+      <br />
+
+      <button id="captureBtn" onclick="captureImage()">
+        Capture Face for Registration
+      </button>
+      <button id="recognizeBtn" onclick="recogniseFace()">
+        Recognise Face
+      </button>
+
+      <div class="result">
+        <p id="statusMessage"></p>
+      </div>
+
+      <div id="nameInput" style="display: none">
+        <input type="text" id="name" placeholder="Enter your name" />
+        <button onclick="registerFace()">Register Face</button>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="frontend/script.js"></script>
+  </body>
+</html>
