@@ -1,5 +1,5 @@
 Flask
-opencv-python-headless==4.7.0.72
+opencv-python-headless
 deepface==0.0.93
 numpy
 pillow
