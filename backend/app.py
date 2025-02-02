@@ -8,7 +8,7 @@ import numpy as np
 import time
 from PIL import Image
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="../frontend", static_folder="../frontend")
 authorised_faces = "authorised_faces"
 
 # create authorised faces path when it doesn't exist
@@ -92,3 +92,20 @@ def recognize_face():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+# Face Authentication system
+# try:
+#     print("Did you authenticate for this system? type Y for Yes and N for No case insensitive")
+#     reply = input()
+#     if(reply.lower() == 'y'):
+#         print("Get ready for authorising yourself")
+#         recognize_face()
+#     elif(reply.lower() == 'n'):
+#         print("You are late but no worries!! You can do that now. ")
+#         capture_and_store_new_face()
+#     else:
+#         print("Please enter valid character")
+# except Exception as e:
+#     print(e)
+
+# capture_and_store_new_face()

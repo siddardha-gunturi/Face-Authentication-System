@@ -45,10 +45,9 @@ function registerFace() {
   let imageData = captureImage();
 
   $.ajax({
-    url: "/.netlify/functions/capture_face",
+    url: "/capture_face",
     type: "POST",
-    contentType: "application/json",
-    data: JSON.stringify({ name: name, image: imageData }),
+    data: { name: name, image: imageData },
     success: (response) => {
       statusMessage.textContent = response.message;
       nameInput.style.display = "none";
@@ -68,10 +67,9 @@ function recognizeFace() {
   let imageData = captureImage();
 
   $.ajax({
-    url: "/.netlify/functions/recognize_face",
+    url: "/recognize_face",
     type: "POST",
-    contentType: "application/json",
-    data: JSON.stringify({ image: imageData }),
+    data: { image: imageData },
     success: (response) => {
       statusMessage.textContent = response.message;
     },
