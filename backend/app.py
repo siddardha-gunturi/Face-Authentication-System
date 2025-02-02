@@ -91,7 +91,8 @@ def recognize_face():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Railway provides the port via the PORT environment variable
+    app.run(debug=True, host="0.0.0.0", port=port)
 
 # Face Authentication system
 # try:
