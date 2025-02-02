@@ -8,6 +8,7 @@ import numpy as np
 import time
 from PIL import Image
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1" 
 app = Flask(__name__, template_folder="../frontend", static_folder="../frontend")
 authorised_faces = "authorised_faces"
 
