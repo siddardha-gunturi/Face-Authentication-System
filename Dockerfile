@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE 5000
 
-CMD ["gunicorn", "backend.app:app", "--timeout", "600", "-b", "0.0.0.0:8080"]
+CMD ["gunicorn", "backend.app:app", "--timeout", "600", "-b", "0.0.0.0:8080", "--workers", "4"]
