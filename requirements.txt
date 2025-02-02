@@ -3,3 +3,4 @@ opencv-python-headless
 deepface==0.0.93
 numpy
 pillow
+tf-keras
