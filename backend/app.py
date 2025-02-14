@@ -1,7 +1,6 @@
 import base64
 import io
 from flask import Flask, render_template, request, jsonify
-import cv2
 from deepface import DeepFace
 import os
 import numpy as np
